@@ -1,0 +1,33 @@
+// ------------
+// How did we find out what 1 rem equals. we added an h1 {font-size 1rem} and looked at its completed size in web tools
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  color: $dark-grey;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  line-height: 1.6;
+
+}
+
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+
+  cursor: default;
+}
+
+html {
+  font-size: 62.5%;  // since 1 rem on mac equals 16px 16 x 62.5 = 10 so we can use rem and get an idea of their size
+}
+
+.is-active {
+  font-weight: bold;
+}
